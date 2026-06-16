@@ -26,6 +26,8 @@ services:
     container_name: zhiyou-frontend
     ports:
       - "8005:8005" # 将阿里云服务器的公网 8005 端口映射到容器内部 Nginx 监听的 8005 端口
+    volumes:
+      - /root/ssl:/etc/nginx/ssl:ro
     depends_on:
       - zhiyou-backend
     restart: unless-stopped

@@ -24,3 +24,7 @@ Thumbs.db
 
 # Docker volumes
 data/.env
+
+# Sensitive and backup files
+ssl/
+data_corrupted_backup/

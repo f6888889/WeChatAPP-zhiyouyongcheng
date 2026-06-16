@@ -24,6 +24,8 @@ services:
     container_name: zhiyou-frontend
     ports:
       - "8005:8005"
+    volumes:
+      - ./ssl:/etc/nginx/ssl:ro
     depends_on:
       - zhiyou-backend
     restart: unless-stopped
